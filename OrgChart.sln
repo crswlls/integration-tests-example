@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrgChart", "OrgChart\OrgChart.csproj", "{6670FEDA-D309-497E-9DE0-C5F414895B94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{A47F122B-7F1E-4401-AA21-A5EACB1E2E66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{31F5CF85-037B-42AA-BED8-D0CACBE60938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31F5CF85-037B-42AA-BED8-D0CACBE60938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F5CF85-037B-42AA-BED8-D0CACBE60938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F5CF85-037B-42AA-BED8-D0CACBE60938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F5CF85-037B-42AA-BED8-D0CACBE60938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6670FEDA-D309-497E-9DE0-C5F414895B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6670FEDA-D309-497E-9DE0-C5F414895B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6670FEDA-D309-497E-9DE0-C5F414895B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6670FEDA-D309-497E-9DE0-C5F414895B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A47F122B-7F1E-4401-AA21-A5EACB1E2E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47F122B-7F1E-4401-AA21-A5EACB1E2E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47F122B-7F1E-4401-AA21-A5EACB1E2E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47F122B-7F1E-4401-AA21-A5EACB1E2E66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
