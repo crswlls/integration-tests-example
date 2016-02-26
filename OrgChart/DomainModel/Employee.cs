@@ -3,12 +3,11 @@ using System.Collections.ObjectModel;
 
 namespace OrgChart
 {
-    public class Employee
+    public class Employee : IVisitable
     {
         private readonly List<Employee> _subordinates;
 
         public string Name { get; }
-
 
         public IEnumerable<Employee> Subordinates
         {
@@ -24,9 +23,18 @@ namespace OrgChart
             _subordinates = new List<Employee>();
         }
 
-        public void AddNewSubordinate(string name)
+        public void AddNewSubordinate(Employee employee)
         {
-            _subordinates.Add(new Employee(name));
+            _subordinates.Add(employee);
+        }
+
+        void IVisitable.Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+            foreach (var employee in Subordinates)
+            {
+                ((IVisitable)employee).Accept(visitor);
+            }
         }
     }
 }

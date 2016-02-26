@@ -10,14 +10,19 @@ namespace ViewModels
         private RelayCommand<Employee> _addEmployeeCommand;
         private Organisation _org;
 
-        public ObservableCollection<Employee> AllEmployees { get; }
+        public ObservableCollection<Employee> PossibleSuperiors
+        {
+            get
+            {
+                return new ObservableCollection<Employee>(Org.GetAllEmployees());
+            }
+        }
 
         public string NewEmployeeName { get; set; }
 
         public AddEmployeeViewModel(IOrgRepository orgRepo)
         {
             _orgRepo = orgRepo;
-            AllEmployees = new ObservableCollection<Employee>();
         }
 
         private Organisation Org
@@ -39,7 +44,7 @@ namespace ViewModels
 
         private void OnAddEmployee(Employee manager)
         {
-            manager.AddNewSubordinate(NewEmployeeName);
+            manager.AddNewSubordinate(new Employee(NewEmployeeName));
         }
     }
 }

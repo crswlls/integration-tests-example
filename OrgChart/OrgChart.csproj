@@ -36,10 +36,14 @@
     <Compile Include="Ports\IOrgRepository.cs" />
     <Compile Include="DomainModel\SeniorLeader.cs" />
     <Compile Include="DomainModel\HeadOfOrg.cs" />
+    <Compile Include="DomainModel\Visitors\IVisitor.cs" />
+    <Compile Include="DomainModel\Visitors\IVisitable.cs" />
+    <Compile Include="DomainModel\Visitors\AllEmployeesVisitor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
     <Folder Include="DomainModel\" />
     <Folder Include="Ports\" />
+    <Folder Include="DomainModel\Visitors\" />
   </ItemGroup>
 </Project>
