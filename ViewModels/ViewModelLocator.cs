@@ -3,7 +3,7 @@ using GalaSoft.MvvmLight.Ioc;
 
 namespace ViewModels
 {
-    public class ViewModelLocator
+    public static class ViewModelLocator
     {
         public static AddEmployeeViewModel AddEmployeeVm
         {
@@ -21,8 +21,7 @@ namespace ViewModels
         public static void Reset()
         {
             ServiceLocator.SetLocatorProvider (() => SimpleIoc.Default);
-            SimpleIoc.Default.Register<AddEmployeeViewModel> ();
+            SimpleIoc.Default.Register<AddEmployeeViewModel>();
         }
     }
 }
-

@@ -5,7 +5,7 @@ using OrgChart;
 
 namespace IntegrationTests
 {
-    public class SetupHelper
+    public static class SetupHelper
     {
         private static ViewModelLocator _locator;
         private static readonly OrgRepositoryStub _orgRepositoryStub = new OrgRepositoryStub();

@@ -1,5 +1,4 @@
-﻿using System;
-using OrgChart;
+﻿using OrgChart;
 
 namespace IntegrationTests
 {
