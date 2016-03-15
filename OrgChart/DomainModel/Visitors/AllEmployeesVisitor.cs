@@ -6,7 +6,7 @@ namespace OrgChart
     {
         private readonly List<Employee> _employees = new List<Employee>();
 
-        public void Visit (Organisation org)
+        public void Visit(Organisation org)
         {
             // Nothing to do
         }

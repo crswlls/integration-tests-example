@@ -16,7 +16,6 @@ namespace OrgChart
                 return new ReadOnlyCollection<Employee>(_subordinates);
             }
         }
-
         public Employee(string name)
         {
             Name = name;

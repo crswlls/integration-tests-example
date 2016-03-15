@@ -1,13 +1,11 @@
-﻿using System;
-using GalaSoft.MvvmLight.Ioc;
-using ViewModels;
+﻿using GalaSoft.MvvmLight.Ioc;
 using OrgChart;
+using ViewModels;
 
 namespace IntegrationTests
 {
     public static class SetupHelper
     {
-        private static ViewModelLocator _locator;
         private static readonly OrgRepositoryStub _orgRepositoryStub = new OrgRepositoryStub();
 
         public static OrgRepositoryStub OrgRepositoryStub
@@ -18,24 +16,11 @@ namespace IntegrationTests
             }
         }
 
-        public static ViewModelLocator Locator
-        {
-            get
-            {
-                return _locator;
-            }
-        }
-
         public static void InitialiseApp()
         {
             SimpleIoc.Default.Reset();
-            if (_locator != null)
-            {
-                ViewModelLocator.Reset();
-            }
-
+            ViewModelLocator.Reset();
             SimpleIoc.Default.Register<IOrgRepository>(() => _orgRepositoryStub);
-            _locator = new ViewModelLocator();
         }
     }
 }
