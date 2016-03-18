@@ -1,6 +1,6 @@
 ﻿namespace OrgChart
 {
-    public interface IVisitor
+    internal interface IVisitor
     {
         void Visit(Organisation org);
         void Visit(HeadOfOrg org);

@@ -1,6 +1,6 @@
 ﻿namespace OrgChart
 {
-    public interface IVisitable
+    internal interface IVisitable
     {
         void Accept(IVisitor visitor);
     }
